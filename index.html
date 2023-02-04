@@ -9,25 +9,288 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">&nbsp;</div>
+        <div class="header">
+            <div class="header-top">
+                <div class="search-bar-wrapper">
+                    <img style="height: 2.5vh; padding: 0;" id="search-bar-icon"src="Logos/magnify.svg" alt="Search Button">
+                    <input type="text" id="search-bar" placeholder="Search..">
+                </div>
+                <div class="profile-buttons-wrapper">
+                    <img style="height: 3vh; padding: 0;" src="Logos/bell-badge-outline.svg" alt="Search Button">
+                    <img style="height: 5vh; padding: 0;" src="Logos/alpha-d-circle-outline.svg" alt="Profile Picture">
+                    <p style="margin: 0;">Daniel Nevin</p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-welcome-wrapper">
+                    <img style="height: 7vh; padding: 0;" src="Logos/alpha-d-circle-outline.svg" alt="Profile Picture">
+                    <div class="header-welcome-wrapper-text">
+                        <p style="font-size: 1.3vh; color: rgb(79, 79, 79);">Hi there,</p>
+                        <p style="font-size: 2.5vh;">Daniel Nevin (@dnevin)</p>
+                    </div>
+                </div>
+                <div class="header-buttons-wrapper">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
         <div class="sidebar">
-            <div id="sidebar-dashboard" class="sidebar-row">
-                <img style="height: 6vh; color: white;" class="svg-color" src="Logos/view-dashboard-variant.svg" alt="Dashboard Button">
-                <p>Dashboard</p>
-            </div>            
+            <div class="sidebar-wrapper">
+                <div class="sidebar-row-wrapper" id="sidebar-row-wrapper-dashboard">
+                    <img style="height: 7vh; padding-top: 4vh;"
+                        class="svg-color" src="Logos/view-dashboard-outline.svg" alt="Dashboard Button">  
+                    <p style="padding-top: 4vh;">Dashboard</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/account-card-outline.svg" alt="Account Button">
+                    <p id="sidebar-text">Profile</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/message-badge-outline.svg" alt="Messages Button">
+                    <p>Messages</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/clock-time-nine-outline.svg" alt="History Button">
+                    <p>History</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/calendar-check-outline.svg" alt="Tasks Button">
+                    <p>Tasks</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/account-group.svg" alt="Communities Button">
+                    <p>Communities</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/cog-outline.svg" alt="Settings Button">
+                    <p>Settings</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/help-box-outline.svg" alt="Support Button">
+                    <p>Support</p>
+                </div>
+                <div class="sidebar-row-wrapper">
+                    <img style="height: 3vh; padding: 0;"
+                        class="svg-color" src="Logos/shield-half-full.svg" alt="Privacy Button">
+                    <p>Privacy</p>
+                </div>    
+
+            </div>  
         </div>
         <div class="content">
-            <div class="content-grid">
-                <div class="content-grid-item"></div>
-                <div class="content-grid-item"></div>
-                <div class="content-grid-item"></div>
-                <div class="content-grid-item"></div>
-                <div class="content-grid-item"></div>
-                <div class="content-grid-item"></div>
+            <div class="content-left">
+                <p class="content-header" style="padding: 3vh 0 0 3vh;">Your Projects</p>
+                <div class="content-grid">
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar">&nbsp;</div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header">Super Cool Project</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar">&nbsp;</div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header">Less Cool Project</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar">&nbsp;</div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header">Impossible App</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar"></div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header"">Easy Peasy App</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar">&nbsp;</div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header">Ad Blocker</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-grid-item-wrapper">
+                        <div class="content-grid-item-sidebar">&nbsp;</div>
+                        <div class="content-grid-item">
+                            <div class="content-grid-item-text">
+                                <div class="content-grid-item-header"">Money Maker</div>
+                                <div class="content-grid-item-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis. Aliquam erat volutpat. Donec quis erat lobortis, laoreet ex cursus, vulputate eros.</div>
+                            </div>
+                            <div class="content-grid-item-buttons">
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/star-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/eye-plus-outline.svg" alt="Messages Button">
+                                </div> 
+                                <div style="height: 2.5vh;">
+                                    <img style="height: 2.5vh; padding: 0;"
+                                        src="Logos/share-variant-outline.svg" alt="Messages Button">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-sidebar">
-                <div class="content-sidebar-item"></div>
-                <div class="content-sidebar-item"></div>
+            <div class="content-right">
+                <div class="content-sidebar">
+                    <p class="content-header" style="padding: 3vh 2vh 2vh 0;">Announcements</p>
+                    <div class="content-sidebar-container">
+                        <div class="content-sidebar-announcements">
+                            <div class="content-sidebar-announcements-text">
+                                <p style="font-weight: 700; margin: 0; font-size: 1.35vh;">Site Maintenance</p>
+                                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis.</p> 
+                            </div>
+                            <div class="content-sidebar-announcements-line">&nbsp;</div>
+                            <div class="content-sidebar-announcements-text">
+                                <p style="font-weight: 700; margin: 0; font-size: 1.35vh;">Community Share Day</p>
+                                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis.</p> 
+                            </div>
+                            <div class="content-sidebar-announcements-line">&nbsp;</div>
+                            <div class="content-sidebar-announcements-text">
+                                <p style="font-weight: 700; margin: 0; font-size: 1.35vh;">Updated Privacy Policy</p>
+                                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at suscipit turpis.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sidebar">
+                    <p class="content-header" style="padding: 3vh 2vh 2vh 0;">Trending</p>
+                    <div class="content-sidebar-container" style="padding: 2vh">
+                        <div class="content-sidebar-trending">
+                            <div class="trending-profile-picture">
+                                <img style="height: 4vh; padding: 0;"
+                                src="Logos/alpha-t-circle-outline.svg" alt="Profile Picture">
+                            </div>
+                            <div class="trending-profile-info">
+                                <p style="margin: 0;">@tegan</p>
+                                <p style="margin: 0; color: rgb(108, 108, 108);">World Peace Builder</p>
+                            </div>
+                            <div class="trending-profile-picture">
+                                <img style="height: 4vh; padding: 0;"
+                                src="Logos/alpha-d-circle-outline.svg" alt="Profile Picture">
+                            </div>
+                            <div class="trending-profile-info">
+                                <p style="margin: 0;">@dnevin</p>
+                                <p style="margin: 0; color: rgb(108, 108, 108);">Super Cool Project</p>
+                            </div>
+                            <div class="trending-profile-picture">
+                                <img style="height: 4vh; padding: 0;"
+                                src="Logos/alpha-k-circle-outline.svg" alt="Profile Picture">
+                            </div>
+                            <div class="trending-profile-info">
+                                <p style="margin: 0;">@kendall</p>
+                                <p style="margin: 0; color: rgb(108, 108, 108);">Life Changing App</p>
+                            </div>
+                            <div class="trending-profile-picture">
+                                <img style="height: 4vh; padding: 0;"
+                                src="Logos/alpha-a-circle-outline.svg" alt="Profile Picture">
+                            </div>
+                            <div class="trending-profile-info">
+                                <p style="margin: 0;">@alex</p>
+                                <p style="margin: 0; color: rgb(108, 108, 108);">No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
